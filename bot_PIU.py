@@ -14,12 +14,13 @@ os.environ["DISCORD_TOKEN_KEY"] = 'MTEwOTAwNjk4NTgyOTA0MDIxOA.GsJXlj.WkfhHE7CMkv
 
 app = Flask(__name__)
 
-@app.route("/health")
+@app.route("/index")
 def health_check():
     return "OK", 200
 
 def run_flask_app():
-    serve(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+    serve(app, host="127.0.0.1", port=8080)
+    # serve(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
 
 def run_discord_bot():
     TOKEN = os.getenv("DISCORD_BOT_TOKEN")
