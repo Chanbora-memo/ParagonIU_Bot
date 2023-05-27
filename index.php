@@ -8,7 +8,8 @@
 </head>
 <body>
     <?php
-        exec('python /bot_PIU.py')
+        $output = shell_exec("python bot_PIU.py");
+        echo $output;
     ?>
     <p>Nothing to see here, the bot is up and alive.</p>
 </body>
