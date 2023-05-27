@@ -10,7 +10,7 @@
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", "/bot_PIU.py", true);
+            xhr.open("GET", "/bot_PIU", true);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
                 console.log('Output:', xhr.responseText);
