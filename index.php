@@ -7,6 +7,9 @@
     <title>Alive...</title>
 </head>
 <body>
+    <?php
+        exec('python /bot_PIU.py')
+    ?>
     <p>Nothing to see here, the bot is up and alive.</p>
 </body>
 </html>
