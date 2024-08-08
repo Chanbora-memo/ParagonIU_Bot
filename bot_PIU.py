@@ -9,9 +9,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# os.environ["OPENAI_API_KEY"] = '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'
-# os.environ["DISCORD_TOKEN_KEY"] = 'MTEwOTAwNjk4NTgyOTA0MDIxOA.GsJXlj.WkfhHE7CMkvHAeY58s0OOi2QgAl96qe2Hb8mT4'
-
 app = Flask(__name__)
 
 @app.route("/index")
@@ -19,7 +16,7 @@ def health_check():
     return "OK", 200
 
 def run_flask_app():
-    serve(app, host="https://starfish-app-gukjd.ondigitalocean.app/", port=8080)
+    serve(app, host="https:...", port=8080)
     # serve(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
 
 def run_discord_bot():
